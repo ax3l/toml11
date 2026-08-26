@@ -30,9 +30,6 @@ else()
 endif()
 
 include(CMakeDependentOption)
-# The conditions below name variables instead of dereferencing them. Such
-# conditions are evaluated the same way by both the OLD and the NEW behavior of
-# CMP0127 (condition syntax changed in 3.22), so the policy needs no setting.
 cmake_dependent_option(TOML11_INSTALL "install toml11 library" ON
     "TOML11_IS_TOP_LEVEL" OFF)
 cmake_dependent_option(TOML11_BUILD_EXAMPLES "build toml11 examples" OFF
