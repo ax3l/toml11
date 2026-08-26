@@ -1,5 +1,5 @@
 # the ...<max> part sets the policy version, it is not an upper version limit
-cmake_minimum_required(VERSION 3.16...4.0)
+cmake_minimum_required(VERSION 3.16...4.4)
 
 # project_source_dir has not been set yet
 file(STRINGS "${CMAKE_CURRENT_SOURCE_DIR}/include/toml11/version.hpp" TOML11_MAJOR_VERSION_STRING
